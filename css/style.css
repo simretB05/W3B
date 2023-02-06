@@ -19,17 +19,15 @@ body {
 }
 .nav {
   width: 60%;
-  min-height: 10vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   place-items: center;
   justify-self: end;
 }
-.nav > a {
-  text-decoration: none;
-}
+
 a {
   color: green;
+  text-decoration: none;
 }
 #card {
   padding: 20px 0;
@@ -37,8 +35,8 @@ a {
   min-height: 80vh;
   display: grid;
   grid-auto-flow: column;
-  justify-items: center;
-  align-items: center;
+  place-items: center;
+  background-color: lightblue;
 }
 .article-container {
   width: 80%;
@@ -54,8 +52,9 @@ a {
   min-height: 100%;
   display: grid;
   place-items: center;
+  background-color: rgb(250, 214, 219);
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  border: 1px solid whitesmoke;
+  border: 1px solid rgb(248, 236, 236);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 25;
 }
